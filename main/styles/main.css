@@ -1,0 +1,748 @@
+/* CSS Dokument PRO1000 Gruppe 3 */
+
+
+html{
+	scroll-behavior: smooth;
+	background: #e8edf3;
+
+}
+
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Sarabun', sans-serif;
+}
+
+.main{
+	width: 100%;	
+}
+
+/* Giga Menu */
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 1s;
+}
+
+.overlay-content {
+  transition: 0.5s all ease-in-out;
+}	
+
+
+
+.overlay a{
+	color: #818181;
+	text-decoration: none;
+	margin-top: -1vh;
+
+}
+
+.overlay-head:hover, .overlay-p:hover, .closebtn:hover{
+	color: white;
+	transition: 0.2s;
+}
+.overlay .closebtn {
+  float: right;
+  margin-right: 2%;
+  font-size: 60px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+
+}
+
+.boxes{
+	height: 40vh;
+	width: 100%;
+	
+}
+
+
+.overlay-box1,.overlay-box2, .overlay-box3, .overlay-box4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	height: 40vh;
+	color: grey;
+	margin-top: 10vh;
+}
+
+.overlay-box1{
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 13vh;	
+}
+.overlay-box2{
+	position: absolute;
+	margin-top: 55vh;
+	margin-left: 5%;
+
+}
+.overlay-box3{
+	position: absolute;
+	margin-left: 40%;
+	margin-top: 13vh;	
+}
+.overlay-box4{
+	position: absolute;
+	margin-top: 53vh;
+	margin-left: 40%;
+}
+
+.overlay-head{
+	color: #818181;
+  	font-size: 2.5vw;
+}
+
+.overlay-p{
+	line-height: 5vh;
+	font-size: 1vw;
+}
+
+
+
+/* Header */
+#header{
+	display: flex;
+	position: fixed;
+	width: 100%;
+	transition: top 0.5s;
+	top: 0;
+	z-index: 1;
+	background: #22264b;
+	transition: 1s all ease-in-out;
+}
+
+#header a{
+	text-decoration: none;
+	color: white;
+}
+
+.home-button, .link-home, .link-more, .link-about, .link-info, .giga-menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #222831;
+	height: 8vh;
+	width: 25%;
+	color: white;
+}
+
+.home-button{
+	width: 10%;
+}
+
+.home-img{
+	margin-left:40%;
+	width: 20%;
+	z-index: 4;
+}
+
+.menu-button{
+	margin-top: 2.2vh;
+}
+
+span > p{
+	cursor: pointer;
+}
+
+span{
+	margin: 0;
+	padding: 0;
+
+}
+
+/* Banner */
+
+.imgHead > img{
+	width: 100%;
+	height: 100vh;
+	 filter: blur(2px);
+}
+
+.headtext-bo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headtext-porsgrunn{
+  position: absolute;
+  top: 740%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headtext-notodden{
+  position: absolute;
+  top: 1430%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+.headtext-tinn{
+  position: absolute;
+  top: 2130%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+/* Svg classes */
+
+.my-path, .my-path2 {
+  fill:none;
+  stroke: black;
+  stroke-width:2;
+}
+
+.my-path3 {
+  fill:none;
+  stroke: black;
+  stroke-width:5;
+}
+
+.my-path4 {
+  fill:none;
+  stroke: black;
+  stroke-width:8;
+}
+
+
+
+#drawLanding, #lineDrawing, #lineDrawing2, #lineDrawing3, #lineDrawing4 , #headDrawing1, #headDrawing2, #headDrawing3, #headDrawing4 {
+	opacity: 0;
+}
+
+.telemark-map{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+svg.head-svg{
+	stroke: white;
+	fill: #e8edf3;
+	stroke-width:1;
+}
+
+
+
+.stroke{
+	stroke-width:1.7;
+	fill: none;
+	stroke: white;
+}
+
+.stroke-bo{
+	stroke-width:1.5;
+	fill: none;
+	stroke: #e8edf3;
+}
+
+
+
+
+object {
+width: inherit;
+height: inherit;
+}
+
+
+g.tekst-svg{
+	stroke-width: 2;
+}
+
+svg.map{
+	width: 30%;
+	height: 30vh;
+	fill: none;
+	stroke: black;
+		
+}
+
+svg.splitmap {
+	position: absolute;
+	width: 50%;
+	height: 50vh;
+	margin-top: 10vh;
+}
+
+.map-animate:hover{
+	fill:black;
+	transform: scale(1.2);
+
+}
+
+.map-animate {
+  transition: all 1s;
+  transform-origin: 0 0;
+}
+
+.map-notodden{
+	float: left;
+	stroke-width:2;
+}
+
+.map-tinn{
+	stroke-width:3;
+}
+
+
+path.map-bo{
+	margin-right: 10%;
+	
+
+}
+
+/* Splitscreen */
+
+.about{
+	height: 500vh;
+	display: flex;	
+}
+
+.header1, .header2, .header3, .header4{
+	text-align: center;
+	color: black;
+	margin-bottom: 70vh;
+	font-size: 3vw;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 0.5s all ease-in-out;
+}
+
+.bo-title, .porsgrunn-title, .notodden-title, .tinn-title{
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5vw;
+	margin: 0!important;
+}
+
+.about-pages{
+	width: 50%;
+
+}
+
+#about-bo {
+	background-image: linear-gradient(to bottom, #7cc2d1, #e8edf3 );
+}
+
+#about-pors{
+	background-image: linear-gradient(to bottom, #92edcc , #e8edf3 );
+}
+#about-noto{
+	background-image: linear-gradient(to bottom, #f7ca9d, #e8edf3 );
+}
+
+#about-tinn{
+	background-image: linear-gradient(to bottom, #f4f2a4, #e8edf3 );
+}
+
+.about-pages div{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: black;
+	
+}
+
+.about-pages div> p{
+	width: 80%;
+	font-size: 1.5vw;
+	line-height: 2em;
+	margin-bottom: 10%;
+}
+
+.about-pages div> h2{
+	font-size: 2.7vw;
+	color: black;
+	margin-bottom: -30%;
+}
+
+#klatreparken-bo{
+	margin-bottom: -10%;
+}
+
+#bratsbergbanen-pors, #oyhopping-pors, #telemarksgalleriet-notoe, #overnatting-noto, #overnatting-tinn{
+	margin-bottom: -20%;
+}
+
+#sjofartsmuseum-pors, #porselensmuseet-pors, #heddal-noto, #tinfos-noto, #sol-tinn, #vemork-tinn{
+	margin-bottom: -25%;
+}
+
+#overnatting-pors, #museum-tinn{
+	margin-bottom: -35%;
+}
+
+.intro-text-1,		.intro-text-2, 	.intro-text-3, 	.intro-text-4,	.intro-text-5, 
+.intro-text-6, 		.intro-text-7, 	.intro-text-8, 	.intro-text-9, 	.intro-text-10,
+.intro-text-11, 	.intro-text-12, .intro-text-13, .intro-text-14, .intro-text-15, 
+.intro-text-16, 	.intro-text-17, .intro-text-18, .intro-text-19, .intro-text-20{
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 0.5s all ease-in-out;
+}
+
+.pin-1, .pin-2, .pin-3, .pin-4, .pin-5, .pin-6, .pin-7, .pin-8, .pin-9, .pin-10, .pin-11, .pin-12, .pin-13, .pin-14, .pin-15, .pin-16{
+	opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+} 
+
+.intro-appear{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+
+
+/* Footer */
+
+.footerparts{
+	height: 40vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #222831;
+	font-size: 1.3vw;
+
+}
+
+.footerleft{
+	width: 30%;
+	color: white;
+
+
+}
+
+.footerleft img{
+	width: auto;
+	height: auto;
+	max-width: 9%;
+	max-height: 9%;
+}
+
+.footerright{
+	width: 30%;	
+	color: white;
+}
+
+h2.footerhead{
+	color: white;
+}
+
+
+
+.slider img {
+	height: 40vh;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	
+}
+
+.padding {
+	padding: 25px;
+
+}
+
+.slider img:hover { /* Hvor stor "zoomen" skal være */
+	-moz-transform: scale(1.1); /* for IE 9 */
+	-webkit-transform: scale(1.1); /* for Safari 3-8 */
+}
+
+.hover-shadow:hover {
+	-webkit-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.35);
+	-moz-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.35);
+	box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.35);
+}
+
+.slider img.hover-shadow {
+  	transition: 0.5s;
+}
+
+/* thumbnails */
+
+.columnModal {
+	float: left;
+	max-width: 5vw;
+	padding-right: 20px;
+	opacity: 0.6;
+}
+
+/* Modal bkg */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+	background-color: black;
+}
+
+/* Modal innhold */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90vw;
+	max-width: 70vw;
+	max-height: 60vh;
+}
+
+.modalSlide {
+ 	height: 70vh;
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 35vh;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Caption text */
+.caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+
+img.thumb {
+	opacity: 0.6;
+	width: 5vw;
+	height: 8vh;
+	padding-bottom: 10px;
+}
+
+.active, 
+.thumb, 
+.columnModal:hover {
+	opacity: 1;
+}
+
+img.hover-shadow {
+	transition: 0.3s;
+}
+
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+/* Landing page */
+
+html.landinghtml, body.landingbody{
+	height: 100%;
+	overflow: hidden;
+}
+
+#fullpage, .sections, .section{
+	position: relative;
+	height: 100vh;
+	/*line-height: 100vh;*/
+}
+
+.section{
+	background-color: #4f9da6;
+	background-size: cover;
+	background-position: 50% 50%;
+	font-size: 6em;
+	text-align: center;
+	/*line-height: 100vh;*/
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+
+h1.animate{
+	font-size: 1em;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.bg{
+	background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../pics/tele.png);
+	background-size: 110% 110%;
+	line-height: 60vh;
+}
+
+.pages{
+	position: fixed;
+	right: 10px;
+	top: 50%;
+	list-style: none;
+}
+
+.pages li{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+	margin: 15px 0 0 7px;
+}
+
+.pages li.active{
+	margin-left: 0;
+	width: 14px;
+	height: 14px;
+	border: 4px solid white;
+	background: none;
+}
+
+.a1 {
+	font-size: 20px;
+}
+
+.animate .letters {
+	display: inline-block;
+	line-height: 1em;
+}
+
+
+
+.animate .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.letters{
+	left: 10%;
+}
+
+.animate .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+
+
+.animate .line1 { top: 0; }
+.animate .line2 { bottom: 0; }
+
+.box{
+	position: absolute;
+	width: 100%;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	background-image: url(../pics/landing.jpg);
+	
+	
+}
+
+.box-bo, .box-porsgrunn, .box-notodden, .box-tinn{
+	margin-top:20vh;
+}
+
+
+.lines
+{
+   stroke: black;
+    
+   transition: ease 1s;
+}
+
+.lines:hover 
+{
+
+  stroke: white;
+  
+}
+
+
+
+
