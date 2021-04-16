@@ -5,9 +5,9 @@ Discord: https://discord.gg/psv3KG
 
 
 
-Erlend Ellefsen: ekbe_97@hotmail.no
-Daniel Jansson
-Andreas Bahrawy
-Jon Stareng Henningsen
-Robin Ellingsen
+Erlend Ellefsen: ekbe_97@hotmail.no  
+Daniel Jansson  
+Andreas Bahrawy  
+Jon Stareng Henningsen  
+Robin Ellingsen  
 Vigleik Stakseng
